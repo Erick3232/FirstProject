@@ -16,6 +16,7 @@ import com.springcourse.spring.repositories.UserRepository;
 @Configuration
 @Profile("test")
 public class TestConfig implements CommandLineRunner{ //database seeding
+		
 	@Autowired //realiza automaticamente 
 	private UserRepository userRepository;//Injection Dependency
 	@Autowired

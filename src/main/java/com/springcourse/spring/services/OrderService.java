@@ -11,14 +11,16 @@ import com.springcourse.spring.repositories.OrderRepository;
 
 @Service //Component Register
 public class OrderService {
-	@Autowired
-	private OrderRepository userRepository;
 	
-	public List<Order> findAll(){
-		return userRepository.findAll();
+	@Autowired
+	private OrderRepository repository;
+	
+	public List<Order> findAll() {
+		return repository.findAll();
 	}
+	
 	public Order findById(Long id) {
-		Optional<Order> obj = userRepository.findById(id);
+		Optional<Order> obj = repository.findById(id);
 		return obj.get();
 	}
 }
