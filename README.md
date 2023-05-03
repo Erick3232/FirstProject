@@ -1,5 +1,5 @@
 # FirstProject
-Making a project in Java, using SpingBoot, JPA, Hibernate, Postman and H2 as DataBase
+Making a project in Java, using SpingBoot, JPA, Apache Maven, Hibernate, Postman and H2 as DataBase
 
 
 In this project, we have multiple ways to use it, but for now just inserting data and classifying them in the API. 
