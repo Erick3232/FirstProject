@@ -11,6 +11,7 @@ import org.springframework.context.annotation.Profile;
 import com.springcourse.spring.entities.Category;
 import com.springcourse.spring.entities.Order;
 import com.springcourse.spring.entities.OrderItem;
+import com.springcourse.spring.entities.Payment;
 import com.springcourse.spring.entities.Product;
 import com.springcourse.spring.entities.User;
 import com.springcourse.spring.enums.OrderStatus;
@@ -77,6 +78,10 @@ public void run(String... args) throws Exception {
 	
 	orderItemRepository.saveAll(Arrays.asList(oi1,oi2,oi3,oi4));
 
+	Payment pay1 = new Payment(null,Instant.parse("2019-06-20T21:53:07Z"), o2);
+	o2.setPayment(pay1);
+	
+	orderRepository.save(o2);
 }
 	
 }
