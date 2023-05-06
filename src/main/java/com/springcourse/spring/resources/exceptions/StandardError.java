@@ -1,4 +1,4 @@
-package com.springcourse.spring.services.exceptions;
+package com.springcourse.spring.resources.exceptions;
 
 import java.io.Serializable;
 import java.time.Instant;
